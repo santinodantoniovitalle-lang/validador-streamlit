@@ -1,3 +1,9 @@
+# Limitar uso de memoria
+import pandas as pd
+pd.options.mode.chained_assignment = None
+
+# Configuración de memoria
+import gc
 import streamlit as st
 import pandas as pd
 import re
@@ -412,3 +418,4 @@ if archivo:
                 )
         
         st.balloons()
+
